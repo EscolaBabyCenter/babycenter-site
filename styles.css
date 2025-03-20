@@ -84,3 +84,8 @@ footer {
     width: 30px;
     height: 30px;
 }
+.hero-image img {
+    max-width: 100%;  /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto;  /* Mantém a proporção original da imagem */
+    width: 500px;  /* Ajuste conforme necessário */
+}
