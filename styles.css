@@ -1,19 +1,22 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #ffcc00;
-    padding: 20px;
+    background-color: #004d00; /* Verde escuro */
+    padding: 15px 0;
     text-align: center;
-    color: #333;
 }
 
+.logo img {
+    width: 120px;
+}
+
+/* Menu */
 nav ul {
     list-style: none;
     padding: 0;
@@ -25,67 +28,89 @@ nav ul li {
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    color: #333;
+    font-size: 18px;
 }
 
-/* Seções */
-section {
-    padding: 20px;
-    background: white;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+/* Capa */
+.hero {
+    background-color: #008000; /* Verde médio */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #ff9900; /* Laranja forte */
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ff9900; /* Laranja */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc7a00; /* Laranja escuro */
+}
+
+/* Sobre */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #008000; /* Verde */
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Rodapé */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
+    background-color: #004d00;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-/* Seção de contato */
-#contato {
     text-align: center;
-    padding: 20px;
-}
-
-.contato-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.contato-links a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #333;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    border-radius: 8px;
-    background-color: #ffcc00;
-    transition: 0.3s;
-}
-
-.contato-links a:hover {
-    background-color: #ffd633;
-}
-
-/* Ajuste dos ícones */
-.contato-links img {
-    width: 30px;
-    height: 30px;
-}
-.hero-image img {
-    max-width: 100%;  /* Garante que a imagem não ultrapasse o tamanho do contêiner */
-    height: auto;  /* Mantém a proporção original da imagem */
-    width: 500px;  /* Ajuste conforme necessário */
+    padding: 10px 0;
+    font-size: 14px;
 }
