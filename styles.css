@@ -1,8 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
 }
 
 /* Cabeçalho */
@@ -12,19 +15,25 @@ header {
     text-align: center;
 }
 
-.logo img {
-    width: 120px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* Menu */
+.logo img {
+    width: 100px;
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -35,19 +44,17 @@ nav ul li a {
 
 /* Capa */
 .hero {
-    background-color: #008000; /* Verde médio */
+    background: linear-gradient(120deg, #008000, #ff9900); /* Verde e laranja */
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .hero-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     max-width: 1000px;
     width: 100%;
 }
@@ -59,7 +66,7 @@ nav ul li a {
 .hero-text h1 {
     font-size: 32px;
     margin-bottom: 15px;
-    color: #ff9900; /* Laranja forte */
+    color: white;
 }
 
 .hero-text p {
@@ -68,7 +75,7 @@ nav ul li a {
 }
 
 .hero-image img {
-    width: 350px;
+    width: 320px;
     border-radius: 10px;
 }
 
@@ -106,11 +113,29 @@ nav ul li a {
     margin: 0 auto;
 }
 
+/* Contato */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.social-icons img {
+    width: 50px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
 /* Rodapé */
 footer {
     background-color: #004d00;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px;
     font-size: 14px;
 }
+
