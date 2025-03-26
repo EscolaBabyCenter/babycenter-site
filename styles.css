@@ -73,3 +73,9 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+.logo {
+    max-width: 180px; /* Ajuste conforme necessário */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
