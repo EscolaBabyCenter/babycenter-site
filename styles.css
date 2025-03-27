@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -10,23 +11,28 @@ body {
     text-align: center;
 }
 
+/* Cabeçalho */
 header {
     background-color: #4CAF50;
     color: white;
     padding: 20px;
 }
 
-.logo {
-    max-width: 150px; /* Tamanho ajustado */
+/* Logo */
+.logo img {
+    max-width: 150px; /* Define um tamanho fixo */
     height: auto;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 10px; /* Centraliza a logo */
 }
 
+/* Menu de navegação */
 nav ul {
     background-color: #333;
     list-style: none;
     padding: 10px;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
 }
 
 nav ul li {
@@ -39,6 +45,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Conteúdo principal */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -50,24 +57,40 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Ajuste do tamanho das imagens na seção "Sobre Nós" */
 .imagem-sobre {
-    max-width: 100%;
+    width: 100%; /* Ajusta ao tamanho da tela */
+    max-width: 600px; /* Tamanho máximo */
     height: auto;
     border-radius: 10px;
-    margin-top: 15px;
+    display: block;
+    margin: 15px auto; /* Centraliza a imagem */
 }
 
+/* Galeria de imagens na seção "Sobre Nós" */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Ajuste das imagens na seção "Contato" */
 .contato-img {
-    max-width: 50px;
+    width: 50px;  /* Mantém um tamanho adequado */
     height: auto;
-    margin-top: 10px;
+    margin: 10px;
 }
 
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
     padding: 10px;
     margin-top: 20px;
-}
-
 }
