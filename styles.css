@@ -67,19 +67,6 @@ h2 {
     margin: 15px auto; /* Centraliza a imagem */
 }
 
-/* Galeria de imagens na seção "Sobre Nós" */
-.galeria {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.galeria img {
-    max-width: 300px;
-    border-radius: 10px;
-}
-
 /* Ajuste das imagens na seção "Contato" */
 .contato-img {
     width: 50px;  /* Mantém um tamanho adequado */
