@@ -81,3 +81,10 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+/* Ajuste do tamanho do logo */
+.logo img {
+    max-width: 120px; /* Reduz o tamanho do logo */
+    height: auto; /* Mantém a proporção */
+    display: inline-block; /* Melhor alinhamento */
+    margin: 0 auto 10px; /* Centraliza a logo */
+}
