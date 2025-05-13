@@ -9,6 +9,28 @@
     <meta name="google-site-verification" content="DNRldjh1ny4INa3rfbp5zSElGzm-r1q-oj_06KH20YM" />
 
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Estilo do botão WhatsApp flutuante -->
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .whatsapp-float img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -75,6 +97,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5561991574130" target="_blank">
+            <img src="whatsapp_contato.png" alt="WhatsApp">
+        </a>
+    </div>
 </body>
 </html>
 
