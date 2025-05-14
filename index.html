@@ -8,124 +8,30 @@
   <!-- Google Search Console -->
   <meta name="google-site-verification" content="DNRldjh1ny4INa3rfbp5zSElGzm-r1q-oj_06KH20YM" />
 
-  <!-- Permitir indexação -->
+  <!-- SEO e redes sociais -->
   <meta name="robots" content="index, follow" />
   <meta name="description" content="Escola de educação infantil em São Sebastião - DF. Amor, acolhimento e aprendizagem com qualidade." />
-
-  <!-- Open Graph (compartilhamento) -->
   <meta property="og:title" content="Centro Educacional Baby Center Alegria do Saber" />
   <meta property="og:description" content="Educação infantil com carinho e excelência em São Sebastião - DF." />
   <meta property="og:image" content="escola_baby_center.png" />
   <meta property="og:url" content="https://babycenter-site-1v3f.vercel.app/" />
   <meta property="og:type" content="website" />
-
   <link rel="canonical" href="https://babycenter-site-1v3f.vercel.app/" />
+
+  <!-- Link para o CSS -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Estilo adicional para o botão flutuante do WhatsApp -->
-  <style>
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 100;
-    }
-
-    .whatsapp-float img {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s;
-    }
-
-    .whatsapp-float img:hover {
-      transform: scale(1.1);
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #f2b705;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .logo {
-      width: 80px;
-      margin-bottom: 10px;
-    }
-
-    h1.titulo-escola {
-      margin: 0;
-      font-size: 1.8rem;
-      color: #fff;
-    }
-
-    nav {
-      background-color: #f7d157;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .imagem-sobre {
-      max-width: 100%;
-      height: auto;
-      margin-top: 20px;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-      text-align: left;
-    }
-
-    .icones-contato img {
-      margin: 10px;
-      width: 40px;
-      vertical-align: middle;
-    }
-  </style>
 </head>
 
 <body>
   <!-- Cabeçalho -->
   <header>
-    <img src="logo_escola.png.jpg" alt="Logo da Escola" class="logo" />
-    <h1 class="titulo-escola">Centro Educacional Baby Center Alegria do Saber</h1>
+    <div class="header-container">
+      <img src="logo_escola.png.jpg" alt="Logo da Escola" class="logo" />
+      <h1 class="titulo-escola">Centro Educacional Baby Center Alegria do Saber</h1>
+    </div>
   </header>
 
-  <!-- Menu de navegação -->
+  <!-- Navegação -->
   <nav>
     <ul>
       <li><a href="#sobre">Sobre Nós</a></li>
@@ -165,15 +71,15 @@
       <p>Email: <a href="mailto:contato@babycenter.com.br">contato@babycenter.com.br</a></p>
       <p>Telefone: <a href="tel:+5561991574130">(61) 99157-4130</a></p>
 
-      <div class="icones-contato">
-        <a href="https://www.instagram.com/babycenteralegriadosaber?igsh=ZDA5ZndxdW5ta2Yw" target="_blank" title="Instagram">
-          <img src="instagram_perfil.png" alt="Instagram" />
+      <div>
+        <a href="https://www.instagram.com/babycenteralegriadosaber?igsh=ZDA5ZndxdW5ta2Yw" target="_blank">
+          <img src="instagram_perfil.png" alt="Instagram" class="contato-img" />
         </a>
-        <a href="https://wa.me/5561991574130" target="_blank" title="WhatsApp">
-          <img src="whatsapp_icon.png" alt="WhatsApp" />
+        <a href="https://wa.me/5561991574130" target="_blank">
+          <img src="whatsapp_icon.png" alt="WhatsApp" class="contato-img" />
         </a>
-        <a href="mailto:contato@babycenter.com.br" title="Email">
-          <img src="email_contato.png" alt="Email" />
+        <a href="mailto:contato@babycenter.com.br">
+          <img src="email_contato.png" alt="Email" class="contato-img" />
         </a>
       </div>
     </div>
@@ -182,9 +88,14 @@
   <!-- Botão flutuante do WhatsApp -->
   <div class="whatsapp-float">
     <a href="https://wa.me/5561991574130" target="_blank">
-      <img src="whatsapp_contato.png" alt="WhatsApp" />
+      <img src="whatsapp_contato.png" alt="WhatsApp" class="whatsapp-icon" />
     </a>
   </div>
+
+  <!-- Rodapé opcional -->
+  <footer>
+    <p>&copy; 2025 Centro Educacional Baby Center Alegria do Saber. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
 
